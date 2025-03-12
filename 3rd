@@ -1,0 +1,17 @@
+import pandas as pd
+df=pd.read_csv("book3.csv")
+print("Oridinal Data:")
+print(df.head())
+
+filtered_df=df[df["Age"]>25]
+
+mean_age=filtered_df["Age"].mean()
+median_salary=filtered_df["Salary"].median()
+total_salary=filtered_df["Salary"].sum()
+
+print("\nFiltered Data(Age>25):")
+print(filtered_df)
+print("\nAddredate Statistics:")
+print("Mean Age:",mean_age)
+print("Median Salary:",median_salary)
+print("Total Salary Sum:",total_salary)

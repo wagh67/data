@@ -1,0 +1,27 @@
+import networkx as nx
+
+import matplotlib.pyplot as plt
+
+#Create a random network
+
+G = nx.erdos_renyi_graph(100, 0.05)
+
+# Calculate degrees
+
+degrees = dict(G.degree)
+
+# Extract degree values
+
+degree_values = list(degrees.values())
+
+# Plot degree distribution
+
+plt.hist(degree_values, bins range(max(degree_values)+2), align='left', rwidth=0.8)
+
+plt.xlabel('Degree')
+
+plt.ylabel('Frequency')
+
+plt.title('Degree Distribution')
+
+plt.show()

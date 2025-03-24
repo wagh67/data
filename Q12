@@ -1,0 +1,33 @@
+import networkx as nx
+
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+# Create and visualize the network
+
+Gnx.Graph([(1, 2), (1, 3), (2, 4), (3, 4), (4, 5)])
+
+pos nx.spring_layout(G)
+
+plt.figure(figsize=(10, 5))
+
+plt.subplot(1, 2, 1)
+
+nx.draw(G, pos, with_labels True)
+
+plt.title("Network Visualization")
+
+# Generate data and plot box plot
+
+data = np.random.randn(100)
+
+plt.subplot(1, 2, 2)
+
+plt.boxplot(data, vert=False)
+
+plt.title("Box Plot")
+
+plt.tight_layout()
+
+plt.show()

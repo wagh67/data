@@ -1,0 +1,19 @@
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+#Generate some random data
+
+np.random.seed(0) #For reproducibility
+
+data np.random.rand(10,300)
+
+Create a correlation matrix
+
+corr_matrix = np.corrcoef(data)
+
+#Plot the correlation matrix
+
+plt.poolor/com_matra, cmap'hot') pit.colorbar
+
+plt.show()

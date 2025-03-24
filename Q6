@@ -1,0 +1,31 @@
+6. Classification using Random Forest.
+
+Sixth.py
+
+from sklearn.datasets import load iris
+
+from sklearn.model_selection import train_test_split From sklearn ensemble import RandomForestClassifier
+
+from sklearn.metrics import accuracy score
+
+#Load data and split
+
+iris-load_iris)
+
+random state-42)
+
+11.12
+
+X_train, X test, y train, y best train_test_split(iris.data, iris.target, test size-0.2.
+
+#Train model and predict
+
+clf Random/ForestClassifier(n estimators 10).fit(X train, y train)
+
+y pred = clf.predict(X test)
+
+#Print results
+
+print("Accuracy: 2fj".format(accuracy_scorely test, y_pred}}}
+
+print("Sample prediction:", iris target names cif.predict([[5.1.3.5.1.4,0.2||)[0]])
